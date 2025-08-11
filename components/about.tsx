@@ -2,32 +2,30 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useLanguage } from "@/components/language-provider"
 
 export function About() {
+  const { t } = useLanguage()
   return (
     <section id="about" className="bg-stone-50 py-24">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-light text-stone-900 mb-8 leading-tight">
-              About The Lisbon Concierge
+              {t.about.title}
             </h2>
 
             <div className="space-y-6 text-lg text-stone-600 leading-relaxed">
               <p>
-                We are Lisbon's dedicated short-term rental management service, specializing in taking care of your
-                property and your guests so you don't have to worry about the day-to-day operations.
+                {t.about.description1}
               </p>
 
               <p>
-                Whether you live far from your property or simply don't have the time to manage guest arrivals,
-                cleaning, and property maintenance, we provide a comprehensive solution that ensures your guests have an
-                exceptional experience while protecting your investment.
+                {t.about.description2}
               </p>
 
               <p>
-                Our local expertise and personal approach mean your property is in trusted hands, and your guests
-                receive the warm Portuguese hospitality they expect when visiting our beautiful city.
+                {t.about.description3}
               </p>
             </div>
 
@@ -42,25 +40,25 @@ export function About() {
                 
                 <div className="px-12 py-16">
                   <div className="space-y-2 text-center">
-                    <div className="text-sm uppercase tracking-[0.3em] text-blue-600 mb-6">Our Promise</div>
+                    <div className="text-sm uppercase tracking-[0.3em] text-blue-600 mb-6">{t.about.promise}</div>
                     
                     <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
-                      Genuine
+                      {t.about.quote.line1}
+                    </div>
+                    <div className={`text-2xl lg:text-3xl font-light leading-tight ${t.about.quote.line2 === 'hospitalidade' ? 'text-blue-600' : 'text-stone-800'}`}>
+                      {t.about.quote.line2}
+                    </div>
+                    <div className={`text-2xl lg:text-3xl font-light leading-tight ${t.about.quote.line3 === 'hospitality' ? 'text-blue-600' : 'text-stone-800'}`}>
+                      {t.about.quote.line3}
                     </div>
                     <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
-                      Portuguese
-                    </div>
-                    <div className="text-2xl lg:text-3xl font-light text-blue-600 leading-tight">
-                      hospitality
+                      {t.about.quote.line4}
                     </div>
                     <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
-                      delivered by locals
+                      {t.about.quote.line5}
                     </div>
-                    <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
-                      who call Lisbon
-                    </div>
-                    <div className="text-2xl lg:text-3xl font-light text-blue-600 leading-tight">
-                      home
+                    <div className={`text-2xl lg:text-3xl font-light leading-tight ${t.about.quote.line6 === 'home' || t.about.quote.line6 === 'de casa' ? 'text-blue-600' : 'text-stone-800'}`}>
+                      {t.about.quote.line6}
                     </div>
                   </div>
                 </div>

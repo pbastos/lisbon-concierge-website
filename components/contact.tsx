@@ -2,17 +2,19 @@
 
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, MapPin } from "lucide-react"
+import { useLanguage } from "@/components/language-provider"
 
 export function Contact() {
+  const { t } = useLanguage()
   return (
     <section id="contact" className="bg-white py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-3xl lg:text-5xl font-light text-stone-900 mb-8 max-w-4xl mx-auto leading-tight">
-            Ready to get started?
+            {t.contact.title}
           </h2>
           <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-            Contact us today to learn how we can help you maximize your property's potential.
+            {t.contact.subtitle}
           </p>
         </div>
 
@@ -23,7 +25,7 @@ export function Contact() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Phone className="h-7 w-7 text-blue-600" />
               </div>
-              <h3 className="text-xl font-medium text-stone-900 mb-3">Call Us</h3>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">{t.contact.callUs}</h3>
               <p className="text-lg text-stone-700 font-medium">(351) 210 993 760</p>
             </div>
 
@@ -32,7 +34,7 @@ export function Contact() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Mail className="h-7 w-7 text-blue-600" />
               </div>
-              <h3 className="text-xl font-medium text-stone-900 mb-3">Email Us</h3>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">{t.contact.emailUs}</h3>
               <p className="text-lg text-stone-700 font-medium">info@thelisbonconcierge.com</p>
             </div>
 
@@ -41,17 +43,17 @@ export function Contact() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="h-7 w-7 text-blue-600" />
               </div>
-              <h3 className="text-xl font-medium text-stone-900 mb-3">Visit Us</h3>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">{t.contact.visitUs}</h3>
               <p className="text-lg text-stone-700 font-medium">Lisbon, Portugal</p>
             </div>
           </div>
 
           <div className="mt-16 text-center bg-gradient-to-r from-blue-50 to-stone-50 rounded-2xl p-12">
             <h3 className="text-2xl font-light text-stone-900 mb-4">
-              Ready to transform your property investment?
+              {t.contact.ctaTitle}
             </h3>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              Let's discuss how our professional management services can help you achieve maximum returns with minimum effort.
+              {t.contact.ctaSubtitle}
             </p>
           </div>
         </div>

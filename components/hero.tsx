@@ -9,9 +9,9 @@ export function Hero() {
     <section className="bg-stone-50 min-h-[60vh] flex items-center justify-center">
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-4xl lg:text-6xl xl:text-7xl font-light text-stone-900 leading-tight max-w-6xl mx-auto">
-          We help you take care of your{" "}
+          {t.hero.title}{" "}
           <span className="relative">
-            <span className="relative z-10">house and guests</span>
+            <span className="relative z-10">{t.hero.highlight}</span>
             <svg
               className="absolute -bottom-2 left-0 w-full h-4 text-blue-500"
               viewBox="0 0 300 20"
