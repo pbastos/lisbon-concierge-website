@@ -21,7 +21,7 @@ export function Hero() {
               <path
                 d="M5 15C50 5 100 8 150 12C200 16 250 10 295 15"
                 stroke="currentColor"
-                strokeWidth="3"
+                strokeWidth="5"
                 fill="none"
                 strokeLinecap="round"
                 style={{
