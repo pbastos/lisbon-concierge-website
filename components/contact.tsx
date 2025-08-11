@@ -24,15 +24,7 @@ export function Contact() {
                 <Phone className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-xl font-medium text-stone-900 mb-3">Call Us</h3>
-              <p className="text-lg text-stone-700 font-medium mb-1">(351) 210 993 760</p>
-              <p className="text-sm text-stone-500 mb-6">Mon-Sun, 24/7 Support</p>
-              <Button 
-                variant="outline"
-                className="w-full border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300"
-                onClick={() => window.location.href = 'tel:+351210993760'}
-              >
-                Call Now
-              </Button>
+              <p className="text-lg text-stone-700 font-medium">(351) 210 993 760</p>
             </div>
 
             {/* Email */}
@@ -41,15 +33,7 @@ export function Contact() {
                 <Mail className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-xl font-medium text-stone-900 mb-3">Email Us</h3>
-              <p className="text-lg text-stone-700 font-medium mb-1">info@thelisbonconcierge.com</p>
-              <p className="text-sm text-stone-500 mb-6">Quick Response Time</p>
-              <Button 
-                variant="outline"
-                className="w-full border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300"
-                onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com'}
-              >
-                Send Email
-              </Button>
+              <p className="text-lg text-stone-700 font-medium">info@thelisbonconcierge.com</p>
             </div>
 
             {/* Location */}
@@ -58,14 +42,7 @@ export function Contact() {
                 <MapPin className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-xl font-medium text-stone-900 mb-3">Visit Us</h3>
-              <p className="text-lg text-stone-700 font-medium mb-1">Lisbon, Portugal</p>
-              <p className="text-sm text-stone-500 mb-6">Serving All Districts</p>
-              <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com?subject=Property Management Inquiry'}
-              >
-                Get Started
-              </Button>
+              <p className="text-lg text-stone-700 font-medium">Lisbon, Portugal</p>
             </div>
           </div>
 

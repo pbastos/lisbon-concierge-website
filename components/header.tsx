@@ -1,17 +1,17 @@
 "use client"
 import Link from "next/link"
-import { Search } from "lucide-react"
+import { Globe } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
+import { usePathname } from "next/navigation"
 
 export function Header() {
-  const { language, setLanguage } = useLanguage()
+  const { locale, t, switchLanguage } = useLanguage()
+  const pathname = usePathname()
 
   const navigation = [
-    { name: "OUR SERVICES", href: "#services" },
-    { name: "OUR PROPERTIES", href: "#properties" },
-    { name: "OUR TEAM", href: "#about" },
-    { name: "STORIES", href: "#stories" },
-    { name: "CONTACT", href: "#contact" },
+    { name: locale === 'pt' ? 'NOSSOS SERVIÇOS' : 'OUR SERVICES', href: "#services" },
+    { name: locale === 'pt' ? 'SOBRE' : 'ABOUT', href: "#about" },
+    { name: locale === 'pt' ? 'CONTACTO' : 'CONTACT', href: "#contact" },
   ]
 
   return (
@@ -19,7 +19,7 @@ export function Header() {
       <div className="container mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center">
             <div className="text-xl font-medium text-stone-900 tracking-wide">THE LISBON CONCIERGE</div>
           </Link>
 
@@ -36,29 +36,15 @@ export function Header() {
             ))}
 
             {/* Language switcher */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 border-l border-stone-200 pl-6">
+              <Globe className="h-4 w-4 text-stone-600" />
               <button
-                onClick={() => setLanguage("en")}
-                className={`text-sm font-medium tracking-wide transition-colors ${
-                  language === "en" ? "text-stone-900" : "text-stone-600 hover:text-stone-900"
-                }`}
+                onClick={() => switchLanguage(locale === 'en' ? 'pt' : 'en')}
+                className={`text-sm font-medium tracking-wide text-blue-600 hover:text-blue-700 transition-colors`}
               >
-                EN
-              </button>
-              <span className="text-stone-400">|</span>
-              <button
-                onClick={() => setLanguage("pt")}
-                className={`text-sm font-medium tracking-wide transition-colors ${
-                  language === "pt" ? "text-stone-900" : "text-stone-600 hover:text-stone-900"
-                }`}
-              >
-                PT
+                {locale === 'en' ? 'PT' : 'EN'}
               </button>
             </div>
-
-            <button className="text-stone-600 hover:text-stone-900 transition-colors">
-              <Search className="h-5 w-5" />
-            </button>
           </nav>
         </div>
       </div>
