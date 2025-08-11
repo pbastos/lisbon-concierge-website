@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Kalam } from "next/font/google"
 import "../globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -8,6 +8,11 @@ import { LanguageProvider } from "@/components/language-provider"
 import { translations } from "@/lib/translations"
 
 const inter = Inter({ subsets: ["latin"] })
+export const kalam = Kalam({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: '--font-kalam'
+})
 
 type Props = {
   children: React.ReactNode
@@ -40,7 +45,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 export default function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={params.locale}>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${kalam.variable}`}>
         <LanguageProvider locale={params.locale}>
           <Header />
           {children}
