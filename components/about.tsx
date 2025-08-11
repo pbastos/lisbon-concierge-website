@@ -34,20 +34,36 @@ export function About() {
           </div>
 
           <div className="flex items-center justify-center min-h-[400px]">
-            <div className="text-center max-w-lg">
-              <div className="space-y-8">
-                <div className="text-6xl text-blue-600 font-serif leading-none">"</div>
+            <div className="max-w-lg">
+              <div className="relative">
+                {/* Decorative element */}
+                <div className="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-blue-200"></div>
+                <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-blue-200"></div>
                 
-                <div className="space-y-4">
-                  <div className="text-2xl lg:text-3xl text-stone-700 leading-relaxed">
-                    Genuine Portuguese <span className="text-blue-600 font-medium">hospitality</span>,
-                  </div>
-                  <div className="text-xl text-stone-600 leading-relaxed">
-                    delivered by locals who call Lisbon <span className="text-blue-600 font-medium">home</span>
+                <div className="px-12 py-16">
+                  <div className="space-y-2 text-center">
+                    <div className="text-sm uppercase tracking-[0.3em] text-blue-600 mb-6">Our Promise</div>
+                    
+                    <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
+                      Genuine
+                    </div>
+                    <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
+                      Portuguese
+                    </div>
+                    <div className="text-2xl lg:text-3xl font-light text-blue-600 leading-tight">
+                      hospitality
+                    </div>
+                    <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
+                      delivered by locals
+                    </div>
+                    <div className="text-2xl lg:text-3xl font-light text-stone-800 leading-tight">
+                      who call Lisbon
+                    </div>
+                    <div className="text-2xl lg:text-3xl font-light text-blue-600 leading-tight">
+                      home
+                    </div>
                   </div>
                 </div>
-
-                <div className="text-6xl text-blue-600 font-serif leading-none rotate-180 inline-block">"</div>
               </div>
             </div>
           </div>

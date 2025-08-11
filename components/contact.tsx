@@ -16,62 +16,66 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-stone-50 rounded-2xl p-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-stone-200">
-              <div className="flex flex-col items-center text-center pt-8 md:pt-0">
-                <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Phone className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-medium text-stone-900 mb-2">Call Us</h3>
-                <p className="text-stone-600 mb-4">(351) 210 993 760</p>
-                <Button 
-                  variant="ghost" 
-                  size="sm"
-                  className="text-blue-600 hover:text-blue-700"
-                  onClick={() => window.location.href = 'tel:+351210993760'}
-                >
-                  Call Now →
-                </Button>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Phone */}
+            <div className="bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Phone className="h-7 w-7 text-blue-600" />
               </div>
-
-              <div className="flex flex-col items-center text-center pt-8 md:pt-0">
-                <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Mail className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-medium text-stone-900 mb-2">Email Us</h3>
-                <p className="text-stone-600 mb-4">info@thelisbonconcierge.com</p>
-                <Button 
-                  variant="ghost" 
-                  size="sm"
-                  className="text-blue-600 hover:text-blue-700"
-                  onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com'}
-                >
-                  Send Email →
-                </Button>
-              </div>
-
-              <div className="flex flex-col items-center text-center pt-8 md:pt-0">
-                <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <MapPin className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-medium text-stone-900 mb-2">Visit Us</h3>
-                <p className="text-stone-600 mb-4">Lisbon, Portugal</p>
-                <p className="text-sm text-stone-500">Available 24/7</p>
-              </div>
-            </div>
-
-            <div className="mt-12 pt-8 border-t border-stone-200 text-center">
-              <p className="text-stone-600 mb-6">
-                Let's discuss how our professional management services can transform your property investment.
-              </p>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">Call Us</h3>
+              <p className="text-lg text-stone-700 font-medium mb-1">(351) 210 993 760</p>
+              <p className="text-sm text-stone-500 mb-6">Mon-Sun, 24/7 Support</p>
               <Button 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium tracking-wide px-8"
-                onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com?subject=Property Management Inquiry'}
+                variant="outline"
+                className="w-full border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300"
+                onClick={() => window.location.href = 'tel:+351210993760'}
               >
-                Start Conversation
+                Call Now
               </Button>
             </div>
+
+            {/* Email */}
+            <div className="bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Mail className="h-7 w-7 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">Email Us</h3>
+              <p className="text-lg text-stone-700 font-medium mb-1">info@thelisbonconcierge.com</p>
+              <p className="text-sm text-stone-500 mb-6">Quick Response Time</p>
+              <Button 
+                variant="outline"
+                className="w-full border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300"
+                onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com'}
+              >
+                Send Email
+              </Button>
+            </div>
+
+            {/* Location */}
+            <div className="bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MapPin className="h-7 w-7 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-medium text-stone-900 mb-3">Visit Us</h3>
+              <p className="text-lg text-stone-700 font-medium mb-1">Lisbon, Portugal</p>
+              <p className="text-sm text-stone-500 mb-6">Serving All Districts</p>
+              <Button 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                onClick={() => window.location.href = 'mailto:info@thelisbonconcierge.com?subject=Property Management Inquiry'}
+              >
+                Get Started
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-16 text-center bg-gradient-to-r from-blue-50 to-stone-50 rounded-2xl p-12">
+            <h3 className="text-2xl font-light text-stone-900 mb-4">
+              Ready to transform your property investment?
+            </h3>
+            <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+              Let's discuss how our professional management services can help you achieve maximum returns with minimum effort.
+            </p>
           </div>
         </div>
       </div>
