@@ -74,6 +74,20 @@ export const translations = {
       ctaSubtitle: "Let's discuss how our professional management services can help you achieve maximum returns with minimum effort."
     },
     
+    // Reviews
+    reviews: {
+      title: "What Our Guests Say",
+      subtitle: "Real experiences from property owners and guests who trust us with their Lisbon stays",
+      verified: "Verified",
+      previous: "Previous review",
+      next: "Next review",
+      goToReview: "Go to review",
+      loading: "Loading reviews...",
+      averageRating: "Average Rating",
+      happyGuests: "Happy Guests",
+      satisfaction: "Satisfaction Rate"
+    },
+    
     // Footer
     footer: {
       description: "Professional short-term rental management in Lisbon. We take care of your property and guests so you can focus on what matters most.",
@@ -156,6 +170,20 @@ export const translations = {
       visitUs: "Visite-nos",
       ctaTitle: "Pronto para transformar o seu investimento imobiliário?",
       ctaSubtitle: "Vamos discutir como os nossos serviços de gestão profissional podem ajudá-lo a obter o máximo retorno com o mínimo esforço."
+    },
+    
+    // Reviews
+    reviews: {
+      title: "O Que Dizem Os Nossos Hóspedes",
+      subtitle: "Experiências reais de proprietários e hóspedes que confiam em nós para as suas estadias em Lisboa",
+      verified: "Verificado",
+      previous: "Avaliação anterior",
+      next: "Próxima avaliação",
+      goToReview: "Ir para avaliação",
+      loading: "A carregar avaliações...",
+      averageRating: "Avaliação Média",
+      happyGuests: "Hóspedes Satisfeitos",
+      satisfaction: "Taxa de Satisfação"
     },
     
     // Footer

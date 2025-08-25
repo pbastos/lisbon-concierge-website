@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/paulobastos/_Code/thelisbonconcierge.com/**)",
+      "Read(//Users/paulobastos/_Code/thelisbonconcierge.com/**)",
+      "Read(//Users/paulobastos/_Code/thelisbonconcierge.com/**)",
+      "Read(//Users/paulobastos/_Code/thelisbonconcierge.com/**)"
+    ]
+  },
+  "disableAllHooks": true
+}

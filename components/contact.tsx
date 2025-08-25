@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
 import { motion } from "framer-motion"
-import { MotionWrapper } from "@/components/motion-wrapper"
+import { LazyMotionWrapper } from "@/components/lazy-motion-wrapper"
 
 export function Contact() {
   const { t } = useLanguage()
   return (
     <section id="contact" className="bg-white py-24">
       <div className="container mx-auto px-6">
-        <MotionWrapper type="fadeUp" className="text-center mb-20">
+        <LazyMotionWrapper type="fadeUp" className="text-center mb-20">
           <h2 className="text-3xl lg:text-5xl font-light text-stone-900 mb-8 max-w-4xl mx-auto leading-tight">
             {t.contact.title}
           </h2>
           <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
             {t.contact.subtitle}
           </p>
-        </MotionWrapper>
+        </LazyMotionWrapper>
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

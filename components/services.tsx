@@ -1,7 +1,7 @@
 "use client"
 import { Users, Sparkles, Key, Shield, Clock, Home } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
-import { MotionWrapper } from "@/components/motion-wrapper"
+import { LazyMotionWrapper } from "@/components/lazy-motion-wrapper"
 import { motion } from "framer-motion"
 
 export function Services() {
@@ -43,14 +43,14 @@ export function Services() {
   return (
     <section id="services" className="bg-white py-24">
       <div className="container mx-auto px-6">
-        <MotionWrapper type="fadeUp" className="text-center mb-20">
+        <LazyMotionWrapper type="fadeUp" className="text-center mb-20">
           <h2 className="text-3xl lg:text-5xl font-light text-stone-900 mb-8 max-w-4xl mx-auto leading-tight">
             {t.services.title}
           </h2>
           <p className="text-lg text-stone-600 max-w-3xl mx-auto leading-relaxed">
             {t.services.subtitle}
           </p>
-        </MotionWrapper>
+        </LazyMotionWrapper>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (

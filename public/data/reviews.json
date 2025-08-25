@@ -1,0 +1,70 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "César Larriva",
+      "text": "I had an amazing experience! The concierge was very kind and welcomed us earlier than expected. As a special Valentine's Day surprise, they left a bottle of champagne and some chocolates for us!",
+      "text_pt": "Tive uma experiência incrível! O concierge foi muito simpático e recebeu-nos mais cedo do que esperado. Como surpresa especial do Dia dos Namorados, deixaram uma garrafa de champanhe e alguns chocolates para nós!",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-02-14",
+      "property": "Lisbon Apartment"
+    },
+    {
+      "id": 2,
+      "name": "Fátima Chamorro",
+      "text": "The concierge team was incredible - they even helped neighbors who were trapped on their balcony at midnight by calling the fire brigade, even though they weren't their guests!",
+      "text_pt": "A equipa de concierge foi incrível - ajudaram até vizinhos que ficaram presos na varanda à meia-noite, chamando os bombeiros, mesmo não sendo hóspedes deles!",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-01-20",
+      "property": "Central Lisbon"
+    },
+    {
+      "id": 3,
+      "name": "Maria Silva",
+      "text": "Outstanding service from start to finish. The team went above and beyond to make our stay memorable. They arranged restaurant reservations, provided local tips, and were always available when needed.",
+      "text_pt": "Serviço excepcional do início ao fim. A equipa fez tudo e mais alguma coisa para tornar a nossa estadia memorável. Organizaram reservas em restaurantes, deram dicas locais e estavam sempre disponíveis quando necessário.",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-03-10",
+      "property": "Alfama House"
+    },
+    {
+      "id": 4,
+      "name": "John Mitchell",
+      "text": "Professional, responsive, and genuinely caring team. They made our Lisbon vacation stress-free and enjoyable. The property was immaculate and exactly as described.",
+      "text_pt": "Equipa profissional, responsiva e genuinamente atenciosa. Tornaram as nossas férias em Lisboa livres de stress e agradáveis. A propriedade estava imaculada e exatamente como descrita.",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-02-28",
+      "property": "Belém View"
+    },
+    {
+      "id": 5,
+      "name": "Sophie Laurent",
+      "text": "The Lisbon Concierge exceeded all expectations. From airport pickup to daily assistance, everything was perfect. They truly care about their guests' experience.",
+      "text_pt": "O Lisbon Concierge superou todas as expectativas. Desde o transporte do aeroporto até à assistência diária, tudo foi perfeito. Eles realmente se preocupam com a experiência dos seus hóspedes.",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-03-15",
+      "property": "Príncipe Real Suite"
+    },
+    {
+      "id": 6,
+      "name": "Ahmed Hassan",
+      "text": "Exceptional attention to detail and customer service. The team helped us navigate Lisbon like locals and made our anniversary celebration truly special.",
+      "text_pt": "Atenção excecional aos detalhes e atendimento ao cliente. A equipa ajudou-nos a navegar por Lisboa como locais e tornou a celebração do nosso aniversário verdadeiramente especial.",
+      "rating": 5,
+      "source": "Google Review",
+      "verified": true,
+      "date": "2024-01-30",
+      "property": "Chiado Apartment"
+    }
+  ]
+}

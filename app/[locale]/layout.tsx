@@ -45,6 +45,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 export default function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={params.locale}>
+      <head>
+        <link rel="preload" as="image" href="/images/lisbon-tram-1920w.webp" type="image/webp" />
+        <link rel="preload" as="image" href="/images/lisbon-tram-optimized.jpg" type="image/jpeg" />
+      </head>
       <body className={`${inter.className} ${kalam.variable}`}>
         <LanguageProvider locale={params.locale}>
           <Header />

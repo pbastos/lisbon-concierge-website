@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
-import { MotionWrapper } from "@/components/motion-wrapper"
+import { LazyMotionWrapper } from "@/components/lazy-motion-wrapper"
 
 export function About() {
   const { t } = useLanguage()
@@ -11,34 +11,34 @@ export function About() {
     <section id="about" className="bg-stone-50 py-24">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <MotionWrapper type="fadeUp">
+          <LazyMotionWrapper type="fadeUp">
             <h2 className="text-3xl lg:text-4xl font-light text-stone-900 mb-8 leading-tight">
               {t.about.title}
             </h2>
 
             <div className="space-y-6 text-lg text-stone-600 leading-relaxed">
-              <MotionWrapper type="fadeUp" delay={0.1}>
+              <LazyMotionWrapper type="fadeUp" delay={0.1}>
                 <p>
                   {t.about.description1}
                 </p>
-              </MotionWrapper>
+              </LazyMotionWrapper>
 
-              <MotionWrapper type="fadeUp" delay={0.2}>
+              <LazyMotionWrapper type="fadeUp" delay={0.2}>
                 <p>
                   {t.about.description2}
                 </p>
-              </MotionWrapper>
+              </LazyMotionWrapper>
 
-              <MotionWrapper type="fadeUp" delay={0.3}>
+              <LazyMotionWrapper type="fadeUp" delay={0.3}>
                 <p>
                   {t.about.description3}
                 </p>
-              </MotionWrapper>
+              </LazyMotionWrapper>
             </div>
 
-          </MotionWrapper>
+          </LazyMotionWrapper>
 
-          <MotionWrapper type="scale" delay={0.4} className="flex items-center justify-center min-h-[400px]">
+          <LazyMotionWrapper type="scale" delay={0.4} className="flex items-center justify-center min-h-[400px]">
             <div className="max-w-lg">
               <div className="relative">
                 {/* Decorative element */}
@@ -71,7 +71,7 @@ export function About() {
                 </div>
               </div>
             </div>
-          </MotionWrapper>
+          </LazyMotionWrapper>
         </div>
       </div>
     </section>
