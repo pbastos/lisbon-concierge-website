@@ -18,8 +18,9 @@ export const translations = {
     
     // Services
     services: {
-      title: "Your premium solution for Lisbon",
-      subtitle: "We help home owners that want to rent their beautiful houses in Lisbon but don't have the possibility to receive their guests. Renting a house is hard work - but don't worry, we can handle this for you.",
+      title: "Professional Property Management in Lisbon",
+      subtitle: "We provide comprehensive short-term rental management services for property owners who want to maximize their returns without the day-to-day hassle. Our full-service approach handles everything your guests need.",
+      includes: "What's Included:",
       meetGreet: {
         title: "Meet and Greet",
         description: "Personal welcome service for your guests with key handover and property orientation"
@@ -40,9 +41,13 @@ export const translations = {
         title: "Guest Support",
         description: "Ongoing assistance and support for your guests throughout their stay in Lisbon"
       },
+      priceRevenue: {
+        title: "Price & Revenue Management",
+        description: "Dynamic pricing optimization and revenue management to maximize your property's earning potential"
+      },
       propertyManagement: {
-        title: "Property Management",
-        description: "Complete property oversight including maintenance coordination and guest communication"
+        title: "Complete Property Management",
+        description: "Full-service short-term rental management that maximizes your property's potential while providing exceptional guest experiences. We handle every detail so you don't have to."
       }
     },
     
@@ -116,8 +121,9 @@ export const translations = {
     
     // Services
     services: {
-      title: "A sua solução premium em Lisboa",
-      subtitle: "Ajudamos proprietários que querem alugar as suas belas casas em Lisboa mas não têm a possibilidade de receber os seus hóspedes. Alugar uma casa dá muito trabalho - mas não se preocupe, nós tratamos disso por si.",
+      title: "Gestão Profissional de Propriedades em Lisboa",
+      subtitle: "Oferecemos serviços completos de gestão de aluguer de curta duração para proprietários que querem maximizar os seus retornos sem o trabalho diário. A nossa abordagem de serviço completo trata de tudo o que os seus hóspedes precisam.",
+      includes: "O Que Inclui:",
       meetGreet: {
         title: "Receção de Hóspedes",
         description: "Serviço de boas-vindas pessoal para os seus hóspedes com entrega de chaves e orientação sobre a propriedade"
@@ -138,9 +144,13 @@ export const translations = {
         title: "Apoio aos Hóspedes",
         description: "Assistência e apoio contínuo aos seus hóspedes durante toda a estadia em Lisboa"
       },
+      priceRevenue: {
+        title: "Gestão de Preços e Receita",
+        description: "Otimização dinâmica de preços e gestão de receita para maximizar o potencial de rendimento da sua propriedade"
+      },
       propertyManagement: {
-        title: "Gestão de Propriedades",
-        description: "Supervisão completa da propriedade incluindo coordenação de manutenção e comunicação com hóspedes"
+        title: "Gestão Completa de Propriedades",
+        description: "Gestão de aluguer de curta duração de serviço completo que maximiza o potencial da sua propriedade enquanto oferece experiências excecionais aos hóspedes. Tratamos de todos os detalhes para que não tenha de se preocupar."
       }
     },
     
